@@ -7,10 +7,13 @@
 
 }
 
+.clearfix {zoom: 1}
 .clearfix:after{
-    content: "";
-    display: table;
+    content: ".";
     clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
 
 html{
@@ -40,6 +43,7 @@ header{
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/hero-image.JPG);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100vh;
 }
 
@@ -142,6 +146,10 @@ h2:after{
     margin-top: 30px;
 }
 
+.features .presentation__text{
+    margin-bottom: 30px;
+}
+
 /* ICONS */
 
 .presentation__icon{
@@ -150,6 +158,13 @@ h2:after{
     color: #25a25a;
     margin-bottom: 10px;
     margin-left: 25%;
+}
+
+.course__icon{
+    font-size: 150%;
+    float: left;
+    color: #25a25a;
+    font-weight:bolder
 }
 
 /* BUTTONS */
@@ -194,4 +209,146 @@ h2:after{
 .ghost__button:active {
     border: 1 px solid #28b062;
     color: white;
+}
+
+/* Classes (photos) */
+
+.classes{
+    padding: 0;
+    margin: 0;
+}
+
+.classes__list{
+    list-style: none;
+    width: 100%;
+}
+
+.classes__list li{
+    display: block;
+    float: left;
+    width: 33.3333%;
+
+}
+
+.classes__photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.classes__photo img{
+    opacity: 0.7;
+    width: 100%;
+    height:auto;
+    transform: scale(1.15);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.classes__photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* How it works */
+
+.section__steps{
+    background-color: beige;
+}
+.steps__box:first-child {
+    text-align: right; /* funciona para todos los elementos inline block elements */
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps__box:last-of-type {
+    padding-left: 3%;
+    margin-top: 30px;
+}
+
+.app__screen{
+    width: 40%;
+}
+
+.works__step{
+    margin-bottom: 50px;
+}
+
+.works__step:last-of-type{
+    margin-bottom: 80px;
+}
+
+.works__step div{
+    color: #28b062;
+    border: 2px solid #28b062;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.button__app:link,
+.button__app:visited{
+    border: 0;
+}
+.button__app img{
+    height: 50px;
+    width:auto;
+    margin-right: 10px;
+}
+
+/* Classes (photos) */
+
+.course__info h3{
+    margin-top: 20px;
+}
+
+.course__info h4{
+    margin-left: 40px;
+    font-weight:lighter;
+}
+
+.course__feature{
+    margin-bottom: 15px;
+}
+
+/* Testimonials */
+
+.testimonials{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/quotes-image.JPG);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+blockquote{
+    padding: 2%;
+    line-height: 145%;
+    font-style: italic;
+    position: relative;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position:absolute;
+    top: -5px;
+    left: -5px;
+}
+cite img{
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
 }

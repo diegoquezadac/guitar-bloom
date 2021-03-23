@@ -1,0 +1,105 @@
+/* Widths smaller than the 1140px row */
+@media only screen and (max-width: 1200px) {
+    .hero__text__box{
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row{padding: 0 2%;}
+
+}
+
+/* Big tablets */
+@media only screen and (max-width: 1023px) {
+    .logo{
+        height: 80px;
+    }
+
+    body{font-size: 18px;}
+
+    section{padding: 60px 0;}
+
+    .presentation__text{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .steps__box{ margin-top: 10px;}
+    .steps__box:last-of-type {margin-top: 10px;}
+    .works__step{ margin-bottom: 40px;}
+    .works__step:last-of-type{ margin-bottom: 60px;}
+
+    .app__screen{
+        width: 50%;
+    }
+
+    .plan__box{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .plan__price{
+        font-size: 250%;
+    }
+
+    .contact__form{width: 80%;}
+    
+
+
+}
+
+/* Small tablets like Ipad */
+@media only screen and (max-width: 767px) {
+    body{ font-size: 16px;}
+    section{ padding: 30px;}
+    .row,
+    .hero__text__box{padding: 0 4%;}
+    .col{
+        width:100%;
+        margin: 0 0 4% 0;} /* columns will be stacked*/
+
+    .presentation__icon{
+        font-size: 500%;
+        margin-left: 40%;
+    }
+    .navbar{display: none;}
+
+    h1{ font-size: 180%; }
+    h2{ font-size: 150%; }
+    
+    .presentation__text{
+        width: 100%;
+        margin-left:0;}
+
+    .navbar li{
+        margin-left: 15px;
+    }
+
+    .plan__price{
+        font-size: 180%;
+    }
+
+    .app__screen{
+        width: 40%;
+    }
+    .steps__box:first-child {text-align: center;}
+    
+    .works__step div{
+        height: 40px;
+        width: 40px;
+        padding: 4px;
+        font-size: 120%;
+        margin-right: 15px;
+    }
+
+
+    
+}
+
+/* Small phones */
+@media only screen and (max-width: 480px) {
+    section{padding: 25px 0;}
+    .contact__form{width: 100%;}
+    .presentation__icon{
+        font-size: 500%;
+        margin-left: 40%;
+    }
+}

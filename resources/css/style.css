@@ -60,8 +60,7 @@ header{
     width: auto;
     float: left;
     margin-top: 20px;
-    -webkit-filter: invert(100%);
-            filter: invert(100%);
+    filter: invert(100%);
 }
 
 .navbar{

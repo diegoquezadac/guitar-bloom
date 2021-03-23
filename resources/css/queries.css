@@ -80,6 +80,9 @@
     .app__screen{
         width: 40%;
     }
+
+    
+    
     .steps__box:first-child {text-align: center;}
     
     .works__step div{
@@ -88,6 +91,10 @@
         padding: 4px;
         font-size: 120%;
         margin-right: 15px;
+    }
+
+    .button__app img{
+        width: 150px;
     }
 
 
@@ -101,5 +108,9 @@
     .presentation__icon{
         font-size: 500%;
         margin-left: 40%;
+    }
+
+    .hero__text__box .full__button{
+        margin-bottom: 10px;
     }
 }

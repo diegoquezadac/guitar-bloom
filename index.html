@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <title> Guitar lesson  </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-    <link rel="preconnect" type="text/css" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+   
     
 </head>
 <body>
@@ -17,11 +19,12 @@
         <nav> 
             <div class="row">
                 <img src="resources/css/img/logo.png" alt="logo" class="logo">
+                <img src="resources/css/img/logo.png" alt="logo" class="logo__black">
                 <ul class="navbar">
-                    <li> <a href="#"> Courses </a> </li>
-                    <li> <a href="#"> How it works</a> </li>
-                    <li> <a href="#"> Teacher </a> </li>
-                    <li> <a href="#"> Sign up</a> </li>
+                    <li> <a href="#about"> About </a> </li>
+                    <li> <a href="#how__it__works"> How it works</a> </li>
+                    <li> <a href="#courses"> Courses </a> </li>
+                    <li> <a href="#sign__up"> Sign up</a> </li>
                 </ul> 
             </div>
         </nav>
@@ -29,20 +32,20 @@
 
         <div class="hero__text__box">
             <h1> Let's learn how to rock with the guitar </h1> 
-            <a class="button full__button" href="#"> I want to learn </a>
-            <a class="button ghost__button"href="#"> Show me more </a>
+            <a class="button full__button js__scroll__to__prices" href="#"> I want to learn </a>
+            <a class="button ghost__button js__scroll__to__features"href="#"> Show me more </a>
 
         </div>
     </header>
 
-    <section class="features">
+    <section class="features js__features" id="about">
         <div class="row">
             <h2> Learn through songs </h2>
             <p class="presentation__text"> Hello, I'm Diego Quezada, your new guitar teacher. I know sometimes it is hard to start learning, even more when you are always busy.
                That is why I will take care of that, you will learn a lot in a very short time  </p>
         </div>
 
-        <div class="row"> 
+        <div class="row js__wp__1"> 
 
             <div class="col span-1-of-4 box">
                 <ion-icon class="presentation__icon" name="school-outline"></ion-icon>
@@ -89,7 +92,7 @@
         </ul> 
     </section>
 
-    <section class="section__steps">
+    <section class="section__steps" id="how__it__works">
 
         <div class="row">
             <h2> How it works - Simple as 1, 2, 3 </h2>
@@ -106,7 +109,7 @@
                 </div>
                 <div class="works__step">
                     <div> 2</div>
-                    <p> Subscribe to a course using the mobile application or the website.  </p>
+                    <p> Subscribe to a suitable plan at your own pace.  </p>
                 </div>
                 <div class="works__step">
                     <div> 3</div>
@@ -118,12 +121,12 @@
         </div>
     </section>
 
-    <section class="courses"> 
+    <section class="courses js__courses" id="courses"> 
         <div class="row">
             <h2> I currently offer the following courses  </h2>
         </div>
 
-        <div class="row"> 
+        <div class="row js__wp__2"> 
             <div class="col span-1-of-3 courses__box">
                 <figure class="classes__photo"> 
                     <img src="resources/css/img/intermediate.JPG" alt="campfire guitarist course logo">
@@ -228,15 +231,15 @@
 
     </section>
 
-    <section class="sign__up"> 
+    <section class="sign__up js__prices"> 
     
         <div class="row">
             <h2> Start playing the guitar today </h2>
         </div>
         
-        <div class="row">
+        <div class="row js__wp__3">
             <div class="col span-1-of-3">
-                <div class="plan__box">
+                <div class="plan__box js__wp__4">
                     
                     <div> 
                         <h3> Premium </h3> 
@@ -301,7 +304,7 @@
         </div>
     </section>
 
-    <section class="formulario"> 
+    <section class="formulario" id="sign__up"> 
         <div class="row">
             <h2> I'm happy to hear from you</h2>
         </div>
@@ -386,9 +389,13 @@
     </div>
 
     </footer> 
-    
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script> 
 </body>
 
 
-<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
 </html>

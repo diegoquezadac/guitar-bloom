@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 .clearfix {zoom: 1}
@@ -63,6 +62,14 @@ header{
     filter: invert(100%);
 }
 
+.logo__black{
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+    display: none;
+}
+
 .navbar{
     float: right;
     list-style: none;
@@ -76,14 +83,13 @@ header{
 
 .navbar li a:link,
 .navbar li a:visited{
-    padding: 8px 0;
+    padding: 5px 0;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
     transition: border 0.9s;
     border-bottom:2px solid transparent;
-    
 }
 
 .navbar li a:hover,
@@ -91,11 +97,36 @@ header{
     border-bottom:2px solid #2ecc71;
 }
 
+/* Sticky NAV */
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    background-color: rgba(248, 248, 248, 0.959);
+    box-shadow: 0 2px 2px rgb(230, 230, 230);
+    z-index: 9999;
+    animation-duration: 0.5s;
+}
 
+.sticky ul{
+    margin-top: 20px;
+}
+
+.sticky .navbar {margin-top: 18px;}
+.sticky .navbar li a:link,
+.sticky .navbar li a:visited{
+    padding: 5px 0;
+    color: rgba(0, 0, 0, 0.835);
+}
+
+
+.sticky .logo__black{display: block;}
+.sticky .logo{display: none;}
 /* HEADINGS */
 
 h1, h2, h3{
-    font-weight: 300;
+    font-weight:400;
     text-transform: uppercase;
 }
 
@@ -493,4 +524,18 @@ footer p{
     text-align: center;
     font-size: 90%;
     margin-top: 30px;
+}
+
+/* Animation */
+
+.js__wp__1,
+.js__wp__2,
+.js__wp__3{
+    opacity: 0;
+}
+
+.js__wp__1.animated,
+.js__wp__2.animated,
+.js__wp__3.animated{
+    opacity: 1;
 }

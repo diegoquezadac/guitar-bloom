@@ -23,13 +23,12 @@
         width: 80%;
         margin-left: 10%;
     }
-    .steps__box{ margin-top: 10px;}
-    .steps__box:last-of-type {margin-top: 10px;}
-    .works__step{ margin-bottom: 40px;}
+    .steps__box:last-of-type {margin-top: 30px;}
+    .works__step{ margin-bottom: 50px;}
     .works__step:last-of-type{ margin-bottom: 60px;}
 
     .app__screen{
-        width: 50%;
+        width: 60%;
     }
 
     .plan__box{
@@ -78,7 +77,7 @@
     }
 
     .app__screen{
-        width: 40%;
+        width: 50%;
     }
 
     

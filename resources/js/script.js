@@ -3,19 +3,19 @@ $(document).ready(function() {
     /* Sticky navbar */
     $(".js__features").waypoint(function(direction) {
         if(direction == "down"){
-            $('nav').removeClass("sticky animate__animated animate__fadeOut");
+            //$('nav').removeClass("sticky animate__animated animate__fadeOut");
             $('nav').addClass("sticky animate__animated animate__fadeIn");
         }
         else{
             $('nav').removeClass("sticky animate__animated animate__fadeIn");
-            $('nav').addClass("sticky animate__animated animate__fadeOut");
+            //$('nav').addClass("sticky animate__animated animate__fadeOut");
         }}, 
         { offset: "60px"}
     )
     
     /* Scroll on buttons */
     $(".js__scroll__to__prices").click(function () {
-        $("html, body").animate({scrollTop: $(".js__prices").offset().top}, 1000);
+        $("html, body").animate({scrollTop: $(".js__prices").offset().top}, 2000);
     })
 
     $(".js__scroll__to__features").click(function () {

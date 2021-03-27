@@ -97,6 +97,18 @@ header{
     border-bottom:2px solid #2ecc71;
 }
 
+.mobile__nav{
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile__nav__icon{
+    font-size: 200%;
+    color: #fff;
+}
+
 /* Sticky NAV */
 .sticky{
     position: fixed;

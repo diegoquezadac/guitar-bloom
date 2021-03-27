@@ -59,7 +59,35 @@
         font-size: 500%;
         margin-left: 40%;
     }
-    .navbar{display: none;}
+    /* .navbar{display: none;} */
+    .navbar{
+        display: none;
+        float: left;
+        margin-top: 35px;
+        margin-left: 25px;}
+
+    .navbar li{
+        display: block;
+    }
+
+    .navbar li a:link,
+    .navbar li a:visited{
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    .mobile__nav{display: inline-block;}
+    
+    .sticky .navbar {margin-top: 10px;}
+    .sticky .navbar li a:link,
+    .sticky .navbar li a:visited{
+        padding: 10px 0;
+        color: rgba(0, 0, 0, 0.835);
+    }
+
+    .sticky .mobile__nav{ margin-top: 10px; }
+    .sticky .mobile__nav__icon{ color: #555; }
 
     h1{ font-size: 180%; }
     h2{ font-size: 150%; }

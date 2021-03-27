@@ -4,11 +4,15 @@ $(document).ready(function() {
     $(".js__features").waypoint(function(direction) {
         if(direction == "down"){
             //$('nav').removeClass("sticky animate__animated animate__fadeOut");
-            $('nav').addClass("sticky animate__animated animate__fadeIn");
+            if(! $('nav').hasClass("sticky") ){
+                $('nav').addClass("sticky animate__animated animate__fadeIn");
+            }
+            
         }
         else{
-            $('nav').removeClass("sticky animate__animated animate__fadeIn");
-            //$('nav').addClass("sticky animate__animated animate__fadeOut");
+            if($('nav').hasClass("sticky") ){
+                $('nav').removeClass("sticky animate__animated animate__fadeIn");
+            }
         }}, 
         { offset: "60px"}
     )
@@ -78,8 +82,15 @@ $(document).ready(function() {
         $(".js__wp__4").addClass('animate__animated animate__jackInTheBox');
     }, {offset: "50%"});
 
+    /* Nav navigation */
 
+    $(".js__mobile__nav").click(function () {
+        let nav = $('.js__navbar');
+        let icon = $(".js__mobile__nav");
+        nav.slideToggle(200);
 
+        
+    })
     
 
 

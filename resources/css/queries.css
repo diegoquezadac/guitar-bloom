@@ -133,8 +133,33 @@
     section{padding: 25px 0;}
     .contact__form{width: 100%;}
     .presentation__icon{
-        font-size: 500%;
+        font-size: 400%;
         margin-left: 40%;
+    }
+
+    .navbar{
+        margin-left: 0;
+        margin-right: 5%;
+        padding: 0;
+    }
+    .navbar li {
+        font-size: 70%;
+    }
+
+    .logo{
+        width: 30%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .logo__black{
+        width: 30%;
+        height: auto;
+        margin: 2px 0;
+    }
+
+    .mobile__nav__icon{
+        font-size: 170%;
     }
 
     .hero__text__box .full__button{

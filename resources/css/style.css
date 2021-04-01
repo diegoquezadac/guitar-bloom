@@ -483,12 +483,12 @@ footer{
 
 .social__icons .linkedin__icon a:hover,
 .social__icons .linkedin__iconi a:active{
-    color: #0077B5;
+    color: #0e76a8;
 }
 
 .social__icons .github__icon a:hover,
 .social__icons .github__iconi a:active{
-    color: rgb(241, 130, 56);
+    color: #ddd;
 }
 
 footer p{

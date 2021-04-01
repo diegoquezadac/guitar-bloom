@@ -294,65 +294,78 @@
     </section>
 
     <section class="formulario" id="sign__up"> 
-        <div class="row">
-            <h2> I'm happy to hear from you</h2>
-        </div>
-        <div class="row">
-            <form method="post" action="#" class="contact__form">
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="name"> Name </label>
+
+        <div class="form__box" id="form">
+            <div class="row">
+                <h2> I'm happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="mailer.php" class="contact__form">
+                    <div class="row">
+                        <?php
+                        if($_GET['success'] == 1) {
+                            echo "<div class=\"form__messages success\"> Thank you! Your message has been sent. </div>"
+                        }
+                        if($_GET['success'] == -1){
+                            echo "<div class=\"form__messages success\">Ups! Something went wrong, please try again!. </div>"
+                        }
+                        ?>
                     </div>
-                    <div class="col span-2-of-3">
-                        <input type="text" name="name" id="name" placeholder="Enter your name" required>     
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name"> Name </label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Enter your name" required>     
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="email"> Email </label>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email"> Email </label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="email" id="email" placeholder="Enter your email" required>     
+                        </div>
                     </div>
-                    <div class="col span-2-of-3">
-                        <input type="text" name="email" id="email" placeholder="Enter your email" required>     
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us"> How did you find me? </label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
+                                <option value="friends" selected> Friends </option>
+                                <option value="instagram"> Instagram </option>
+                                <option value="facebook"> Facebook </option>
+                                <option value="other"> Other </option>
+                            </select> 
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="find-us"> How did you find me? </label>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="newsletter"> Newsletter </label>
+                        </div>
+                        <div class="col span-2-of-3">
+                        <input type="checkbox" name="newsletter" id="newsletter" checked>  Yes, please.
+                        </div>
                     </div>
-                    <div class="col span-2-of-3">
-                        <select name="find-us" id="find-us">
-                            <option value="friends" selected> Friends </option>
-                            <option value="instagram"> Instagram </option>
-                            <option value="facebook"> Facebook </option>
-                            <option value="other"> Other </option>
-                        </select> 
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label> Leave me a few lines </label>
+                        </div>
+                        <div class="col span-2-of-3">
+                        <textarea placeholder="Your message"> </textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="newsletter"> Newsletter </label>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label> &nbsp; </label>
+                        </div>
+                        <div class="col span-2-of-3">
+                        <input type="submit" value="Send it">
+                        </div>
                     </div>
-                    <div class="col span-2-of-3">
-                       <input type="checkbox" name="newsletter" id="newsletter" checked>  Yes, please.
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label> Leave me a few lines </label>
-                    </div>
-                    <div class="col span-2-of-3">
-                       <textarea placeholder="Your message"> </textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label> &nbsp; </label>
-                    </div>
-                    <div class="col span-2-of-3">
-                       <input type="submit" value="Send it">
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </section>
 

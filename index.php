@@ -304,10 +304,10 @@
                     <div class="row">
                         <?php
                         if($_GET['success'] == 1) {
-                            echo "<div class=\"form__messages success\"> Thank you! Your message has been sent. </div>"
+                            echo "<div class=\"form__messages success\"> Thank you! Your message has been sent. </div>";
                         }
                         if($_GET['success'] == -1){
-                            echo "<div class=\"form__messages success\">Ups! Something went wrong, please try again!. </div>"
+                            echo "<div class=\"form__messages success\">Ups! Something went wrong, please try again!. </div>";
                         }
                         ?>
                     </div>

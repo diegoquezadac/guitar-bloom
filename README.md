@@ -18,3 +18,7 @@ So ..., why did design this whole webpage? well ..., like I said Guitar Bloom wa
 ### About the design 🎨
 
 The design is hardly inspired on the second project of the "Build Responsive Real World Websites with HTML5 and CSS3" course at Udemy ❤️.
+
+### Check it out
+
+💙 https://diegoquezadac.github.io/guitar-bloom/
